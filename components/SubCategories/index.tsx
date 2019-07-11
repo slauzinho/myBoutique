@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const SubCategories: React.FC<IProps> = props => (
-  <View>
+  <View style={{ marginLeft: 10 }}>
     {props.subcats.map(cat => (
       <Category name={cat.name} key={cat.id} />
     ))}

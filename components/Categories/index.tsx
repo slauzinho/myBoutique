@@ -58,7 +58,10 @@ const Categories = () => {
         data.dressing_cats &&
         data.dressing_cats.map(cat => (
           <View key={cat.id}>
-            <Title onPress={() => loadSubCats(cat.subcats, cat.id)}>
+            <Title
+              onPress={() => loadSubCats(cat.subcats, cat.id)}
+              active={cat.id === currentID}
+            >
               {cat.name}
             </Title>
             {currentID === cat.id && currentCat && (

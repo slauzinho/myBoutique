@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import { Text } from 'react-native';
 
-export const Title = styled(Text)`
-  font-weight: 700;
+interface TitleProps {
+  readonly active: boolean;
+}
+export const Title = styled(Text)<TitleProps>`
+  font-weight: ${props => (props.active ? 700 : 400)};
 `;
