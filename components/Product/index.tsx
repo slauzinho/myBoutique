@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Image } from 'react-native';
 import { IProduct } from '../NewIn';
-import { Card, CardItem, Text, Button, Icon, Body } from 'native-base';
+import { CardItem, Text, Button, Body } from 'native-base';
 
 interface IProps {
   product: IProduct;
@@ -18,7 +18,6 @@ const Product: React.FC<IProps> = ({ product }) => (
             }.jpg`,
             cache: 'force-cache',
           }}
-          style={{ height: 250, width: null, flex: 1 }}
         />
       </CardItem>
       <CardItem>

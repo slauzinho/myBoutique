@@ -24,6 +24,9 @@
     "@types/react-native": "^0.57.60",
     "@types/react-native-snap-carousel": "^3.7.3",
     "babel-preset-expo": "^5.1.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^4.0.0",
     "typescript": "^3.4.5"
   },
   "private": true

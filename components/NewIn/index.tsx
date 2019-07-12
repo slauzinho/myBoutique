@@ -18,7 +18,7 @@ const NewIn = () => {
   const [bags, setBags] = useState<IProduct[]>([]);
   const carouselRef = useRef(null);
 
-  const renderItem = ({ item, index }: { item: IProduct; index: number }) => (
+  const renderItem = ({ item }: { item: IProduct; index: number }) => (
     <View>
       <Product key={item.id} product={item} />
     </View>
