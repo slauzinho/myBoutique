@@ -5,6 +5,7 @@ import { createMaterialTopTabNavigator } from 'react-navigation';
 import MenScreen from './MenScreen';
 import ChildrenScreen from './ChildrenScreen';
 import WatchesScreen from './WatchesScreen';
+import { Icon } from 'native-base';
 
 const HomeStack = createMaterialTopTabNavigator(
   {
@@ -32,4 +33,7 @@ const HomeStack = createMaterialTopTabNavigator(
   }
 );
 
+HomeStack.navigationOptions = {
+  tabBarIcon: () => <Icon active name="home" style={{ fontSize: 23 }} />,
+};
 export default HomeStack;
