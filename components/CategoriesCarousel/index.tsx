@@ -9,7 +9,7 @@ const MyCarousel = () => {
   const renderItem = ({ item, index }, parallaxProps) => (
     <View style={styles.item}>
       <ParallaxImage
-        source={{ uri: item.thumbnail }}
+        source={{ uri: item.thumbnail, cache: 'force-cache' }}
         containerStyle={styles.imageContainer}
         style={styles.image}
         parallaxFactor={0.4}
