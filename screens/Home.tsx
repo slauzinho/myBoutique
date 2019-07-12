@@ -1,11 +1,35 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import Categories from '../components/Categories';
+import * as React from 'react';
+import WomenScreen from './WomenScreen';
 
-const HomeScreen = () => (
-  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text>Home Screen</Text>
-    <Categories />
-  </View>
+import { createMaterialTopTabNavigator } from 'react-navigation';
+import MenScreen from './MenScreen';
+import ChildrenScreen from './ChildrenScreen';
+import WatchesScreen from './WatchesScreen';
+
+const HomeStack = createMaterialTopTabNavigator(
+  {
+    Women: WomenScreen,
+    Men: MenScreen,
+    Children: ChildrenScreen,
+    Watches: WatchesScreen,
+  },
+  {
+    initialRouteName: 'Women',
+    tabBarOptions: {
+      style: {
+        backgroundColor: 'white',
+        marginTop: 50,
+      },
+      labelStyle: {
+        color: 'black',
+      },
+      activeTintColor: 'black',
+      inactiveTintColor: 'grey',
+      indicatorStyle: {
+        backgroundColor: 'black',
+      },
+    },
+  }
 );
-export default HomeScreen;
+
+export default HomeStack;
