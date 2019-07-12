@@ -1,9 +1,10 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import CategoriesCarousel from '../components/CategoriesCarousel';
 
 const WomenScreen = () => (
   <View>
-    <Text>Women Screen</Text>
+    <CategoriesCarousel />
   </View>
 );
 

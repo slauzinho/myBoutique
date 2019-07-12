@@ -6,7 +6,6 @@ import HomeStack from './Home';
 import Search from './Search';
 import Sell from './Sell';
 import Account from './Account';
-import { Icon } from 'native-base';
 
 createMaterialTopTabNavigator;
 
