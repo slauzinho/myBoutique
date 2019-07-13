@@ -1,11 +1,10 @@
-import * as React from 'react';
+import React from 'react';
 import WomenScreen from './WomenScreen';
-
+import { Icon } from 'native-base';
 import { createMaterialTopTabNavigator } from 'react-navigation';
 import MenScreen from './MenScreen';
 import ChildrenScreen from './ChildrenScreen';
 import WatchesScreen from './WatchesScreen';
-import { Icon } from 'native-base';
 
 const HomeStack = createMaterialTopTabNavigator(
   {

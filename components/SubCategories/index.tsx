@@ -1,6 +1,6 @@
 import React from 'react';
-import { SubCats } from '../Categories';
 import { View } from 'react-native';
+import { SubCats } from '../Categories';
 import Category from '../Category';
 
 interface IProps {

@@ -1,8 +1,8 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text } from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
 import CategoriesCarousel from '../components/CategoriesCarousel';
 import NewIn from '../components/NewIn';
-import { ScrollView } from 'react-native-gesture-handler';
 
 const WomenScreen = () => (
   <ScrollView style={{ marginTop: 20 }}>

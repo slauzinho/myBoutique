@@ -2,11 +2,19 @@ import React, { useRef } from 'react';
 import Carousel, { ParallaxImage } from 'react-native-snap-carousel';
 import { View, Text, Dimensions, Platform, StyleSheet } from 'react-native';
 
+interface ICategory {
+  title: string;
+  thumbnail: string;
+}
+
 const { width: viewportWidth } = Dimensions.get('window');
 
 const MyCarousel = () => {
   const carouselRef = useRef(null);
-  const renderItem = ({ item, index }, parallaxProps) => (
+  const renderItem = (
+    { item }: { item: ICategory; index: number },
+    parallaxProps: any
+  ) => (
     <View style={styles.item}>
       <ParallaxImage
         source={{ uri: item.thumbnail, cache: 'force-cache' }}

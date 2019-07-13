@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import axios from 'axios';
-import { View } from 'react-native';
-import Product from '../Product';
 import Carousel from 'react-native-snap-carousel';
+import { View } from 'react-native';
+import axios from 'axios';
+import Product from '../Product';
 
 export interface IProduct {
   brand_id: string;

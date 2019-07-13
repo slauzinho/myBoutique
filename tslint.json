@@ -27,7 +27,7 @@
   },
   "rulesDirectory": [],
   "linterOptions": {
-    "exclude": [".expo/*"]
+    "exclude": [".expo/*", "node_modules/**/*"]
   },
   "incorrect-state-access": [true],
   "override-calls-super": [
