@@ -18,6 +18,7 @@ const Product: React.FC<IProps> = ({ product }) => (
             }.jpg`,
             cache: 'force-cache',
           }}
+          style={{ height: 250, flex: 1 }}
         />
       </CardItem>
       <CardItem>
