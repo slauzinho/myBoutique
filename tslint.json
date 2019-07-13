@@ -27,7 +27,7 @@
   },
   "rulesDirectory": [],
   "linterOptions": {
-    "exclude": ["next.config.js", "components/generated/*"]
+    "exclude": [".expo/*"]
   },
   "incorrect-state-access": [true],
   "override-calls-super": [

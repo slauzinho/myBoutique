@@ -1,13 +1,8 @@
-import {
-  createBottomTabNavigator,
-  createMaterialTopTabNavigator,
-} from 'react-navigation';
+import { createBottomTabNavigator } from 'react-navigation';
 import HomeStack from './Home';
 import Search from './Search';
 import Sell from './Sell';
 import Account from './Account';
-
-createMaterialTopTabNavigator;
 
 const AppNavigator = createBottomTabNavigator({
   Home: HomeStack,
