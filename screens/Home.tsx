@@ -19,6 +19,10 @@ const HomeStack = createMaterialTopTabNavigator(
       style: {
         backgroundColor: 'white',
         marginTop: 50,
+        elevation: 0, // remove tab shadow for android
+        shadowOpacity: 0, // remove tab shadow for iOS
+        borderBottomWidth: 0,
+        marginBottom: -1,
       },
       labelStyle: {
         color: 'black',
